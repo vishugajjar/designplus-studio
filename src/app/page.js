@@ -10,8 +10,8 @@ import Details from "@/components/Details";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-fit flex-1 bg-white">
-      <div className="flex flex-col flex-1">
+    <main className="flex h-[100%] w-[100%] flex-1 bg-white">
+      <div className="flex flex-col flex-1 bg-white">
         <div className="flex flex-row">
           <div className="flex-1 h-full flex-col w-2/3 p-4 md:p-10 lg:p-10 xl:p-10 2xl:p-10">
             <p className="sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-sm font-semibold font-serif text-black justify-start text-start">
@@ -33,11 +33,11 @@ export default function Home() {
             <div className="mt-8">
               <Image
                 src={require("../assets/img2.jpeg")}
-                className="w-24 h-28 sm:w-20 sm:h-24 md:w-28 md:h-32 lg:w-36 lg:h-44 xl:w-44 xl:h-52 object-cover"
+                className="w-24 h-28 sm:w-20 sm:h-24 md:w-36 md:h-44 lg:w-36 lg:h-44 xl:w-44 xl:h-52 object-cover"
                 alt="Image"
               />
-              <div className="z-20 -mt-24 ml-20 md:-mt-28 md:ml-20 lg:-mt-36 lg:ml-28 xl:-mt-40 xl:ml-36">
-                <p className="font-normal italic text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl text-[#E1976E]">
+              <div className="z-20 -mt-20 ml-20 md:-mt-36 md:ml-28 lg:-mt-36 lg:ml-28 xl:-mt-40 xl:ml-36">
+                <p className="font-normal italic text-base sm:text-base md:text-xl lg:text-xl xl:text-2xl text-[#E1976E]">
                   Interior
                 </p>
               </div>
@@ -49,14 +49,14 @@ export default function Home() {
               <p className="font-light text-xs text-[#E1976E]">Scroll down</p>
             </div>
           </div>
-          <p className="font-bold opacity-10 mt-20 -mr-40 md:mt-14 md:-mr-72 lg:mt-16 lg:-mr-80 xl:mt-20 xl:-mr-96 z-10 text-5xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl text-gray-700 font-serif">
+          <p className="font-bold opacity-10 mt-20 -mr-44 md:mt-14 md:-mr-96 lg:mt-16 lg:-mr-80 xl:mt-20 xl:-mr-96 z-10 text-5xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl text-gray-700 font-serif">
             Interior
           </p>
-          <div className="z-20 mt-32 -mr-20 md:mt-36 md:-mr-44 lg:mt-36 lg:-mr-44 xl:mt-44 xl:-mr-48 ">
+          <div className="z-20 mt-28 -mr-28 md:mt-32 md:-mr-44 lg:mt-36 lg:-mr-44 xl:mt-44 xl:-mr-48 ">
             <Image
               src={require("../assets/img1.jpeg")}
               alt="Image"
-              className="xl:w-full xl:h-60 lg:w-full lg:h-60 md:w-80 md:h-44 sm:w-60 sm:h-24 w-44 h-28 object-cover"
+              className="xl:w-full xl:h-60 lg:w-full lg:h-60 md:w-96 md:h-52 sm:w-60 sm:h-24 w-44 h-28 object-cover"
             />
           </div>
           <div className="flex bg-[#E1976E] w-2/6 justify-end p-4 md:p-10 lg:p-10 xl:p-10 2xl:p-10">
@@ -89,36 +89,36 @@ export default function Home() {
             img={require("../assets/furniture.png")}
           />
         </div>
-        <div className="flex flex-row mb-4 bg-white">
-          <div className="flex flex-1, flex-col bg-white, mt-4">
-            <p className="font-bold opacity-10 pl-2 text-5xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl text-gray-700 font-serif">
+        <div className="flex md:flex-row lg:flex-row xl:flex-row 2xl:flex-row flex-col items-center mb-4 bg-white">
+          <div className="flex flex-1 items-center flex-col bg-white mt-4">
+            <p className="font-bold opacity-10 pl-2 text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl text-gray-700 font-serif">
               Interior
             </p>
-            <div className="-mt-4 z-10 ml-10 md:-mt-14 lg:-mt-14 xl:-mt-14">
+            <div className="-mt-8 z-10 md:ml-10 xl:ml-10 lg:ml-10 2xl:ml-10 ml-0 md:-mt-14 lg:-mt-14 xl:-mt-14">
               <Image
                 src={require("../assets/img3.jpeg")}
                 alt="Image"
-                className="xl:w-96 xl:h-72 lg:w-80 lg:h-60 md:w-80 md:h-60 sm:w-60 sm:h-24 w-36 h-28 object-cover"
+                className="xl:w-96 xl:h-72 lg:w-80 lg:h-60 md:w-80 md:h-60 sm:w-60 sm:h-24 w-48 h-32 object-cover"
               />
             </div>
-            <div className="z-30 -mt-16 ml-40 md:-mt-36 md:ml-72 lg:-mt-40 lg:ml-72 xl:-mt-44 xl:ml-80">
+            <div className="z-30 -mt-16 ml-52 md:-mt-36 md:ml-72 lg:-mt-40 lg:ml-72 xl:-mt-44 xl:ml-80">
               <Image
                 src={require("../assets/img2.jpeg")}
                 alt="image"
-                className="xl:w-36 xl:h-36 lg:w-32 lg:h-32 md:w-28 md:h-28 sm:w-20 sm:h-20 w-12 h-12 object-cover"
+                className="xl:w-36 xl:h-36 lg:w-32 lg:h-32 md:w-28 md:h-28 sm:w-20 sm:h-20 w-14 h-14 object-cover"
               />
             </div>
           </div>
-          <div className="align-center ml-10 md:ml-24 xl:ml-80 xl:pr-4 mt-6 md:mt-10 lg:mt-10 xl:mt-10 2xl:mt-10 justify-center flex flex-row gap-x-2">
-            <div className="w-3 h-3 md:w-5 md:h-5 lg:w-5 lg:h-5 -mt-2">
+          <div className="align-center ml-10 md:ml-24 xl:ml-80 xl:pr-4 mt-12 md:mt-10 lg:mt-10 xl:mt-10 2xl:mt-10 justify-center flex flex-row gap-x-0 md:gap-x-2 lg:gap-x-2 xl:gap-x-2 2xl:gap-x-2">
+            <div className="w-3 md:z-0 lg:z-0 xl:z-0 2xl:z-0 z-10 h-3 md:w-5 md:h-5 lg:w-5 lg:h-5 -mr-12 md:-mr-0 lg:-mr-0 xl:-mr-0 2xl:-mr-0 -mt-2">
               <FontAwesomeIcon icon={faQuoteLeft} color="#E1976E" />
             </div>
-            <div className="flex flex-col items-start">
-              <p className="text-sm sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-bold text-black w-[20ch] font-serif flex-col flex">
+            <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start 2xl:items-start">
+              <p className="text-sm sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-bold text-center md:text-start lg:text-start xl:text-start 2xl:text-start text-black w-[25ch] md:w-[20ch] lg:w-[20ch] xl:w-[20ch] 2xl:w-[20ch] font-serif flex-col flex">
                 We will make these unique tasters of yours a design really
               </p>
               <div className="flex-col mt-2">
-                <p className="font-normal line-clamp-6 text-xs xl:w-[41ch] lg:w-[35ch] md:w-[35ch] w-[25ch] text-start text-gray-500">
+                <p className="font-normal text-center md:text-start lg:text-start xl:text-start 2xl:text-start line-clamp-6 text-xs md:text-base lg:text-base xl:text-base 2xl:text-base xl:w-[41ch] lg:w-[35ch] md:w-[35ch] w-[40ch] text-gray-500">
                   Interior design is the practice of creating spaces that are
                   functional and aesthetically pleasing. It involves creating
                   floor plans, furniture layouts, and designing a cohesive feel
@@ -137,6 +137,59 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mt-20 pb-10 px-16 flex bg-white">
+          <div className="flex flex-col">
+            <div className="w-3 h-3 md:w-5 md:h-5 lg:w-5 lg:h-5 -mt-6">
+              <FontAwesomeIcon icon={faQuoteLeft} color="#E1976E" />
+            </div>
+            <div className="flex flex-col justify-start items-center">
+              <div className="mt-32 -ml-28 -rotate-90">
+                <p className="font-bold text-slate-500 opacity-70 font-serif text-5xl">
+                  Our projects
+                </p>
+              </div>
+              <div className="rounded-md -ml-4 -mt-44 h-80 w-1 opacity-30 bg-slate-500" />
+            </div>
+          </div>
+          <div className="-ml-14 flex flex-row flex-1 gap-x-10">
+            <Image
+              src={require("../assets/img1.jpeg")}
+              alt="image"
+              className="xl:w-80 xl:h-80 object-cover"
+            />
+            <Image
+              src={require("../assets/img2.jpeg")}
+              alt="image"
+              className="xl:w-80 xl:h-80 object-cover"
+            />
+            <div className="flex flex-col justify-between">
+              <Image
+                src={require("../assets/img3.jpeg")}
+                alt="image"
+                className="xl:w-72 xl:h-72 object-cover"
+              />
+              <div className="flex-row items-center justify-end gap-x-2 md:gap-x-3 lg:gap-x-3 xl:gap-x-3 2xl:gap-x-4 flex mt-1 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4">
+                <div className="border-gray-500 w-12 md:w-14 lg:w-16 xl:w-20 border rounded-md" />
+                <div>
+                  <button className="font-bold text-start text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-base text-gray-500">
+                    All projects
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-16 bg-[#E1976E] p-20">
+          <p className="text-[250px] font-extrabold text-gray-600 opacity-10">
+            Interior
+          </p>
+          <div className="z-20 -mt-80 flex flex-row justify-between px-40 items-center">
+            <p className="font-bold text-3xl">Interior</p>
+            <p>Our services</p>
+            <p>Contact us</p>
+          </div>
+          <div className="border border-white rounded-md" />
         </div>
       </div>
     </main>

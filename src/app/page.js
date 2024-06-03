@@ -4,9 +4,12 @@ import {
   faAlignRight,
   faQuoteLeft,
   faLongArrowDown,
+  fafacebook,
+  fainstagram,
+  fayoutubeplay,
 } from "@fortawesome/free-solid-svg-icons";
 import Details from "@/components/Details";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import Icon from "@/components/Icon";
 
 export default function Home() {
   return (
@@ -33,7 +36,7 @@ export default function Home() {
             <div className="mt-8">
               <Image
                 src={require("../assets/img2.jpeg")}
-                className="w-24 h-28 sm:w-20 sm:h-24 md:w-36 md:h-44 lg:w-36 lg:h-44 xl:w-44 xl:h-52 object-cover"
+                className="w-24 h-28 sm:w-20 sm:h-24 md:w-36 md:h-44 lg:w-36 lg:h-44 xl:w-44 xl:h-52 2xl:w-44 2xl:h-52  object-cover"
                 alt="Image"
               />
               <div className="z-20 -mt-20 ml-20 md:-mt-36 md:ml-28 lg:-mt-36 lg:ml-28 xl:-mt-40 xl:ml-36">
@@ -49,14 +52,14 @@ export default function Home() {
               <p className="font-light text-xs text-[#E1976E]">Scroll down</p>
             </div>
           </div>
-          <p className="font-bold opacity-10 mt-20 -mr-44 md:mt-14 md:-mr-96 lg:mt-16 lg:-mr-80 xl:mt-20 xl:-mr-96 z-10 text-5xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl text-gray-700 font-serif">
+          <p className="font-bold opacity-10 mt-20 -mr-44 md:mt-14 md:-mr-96 lg:mt-16 lg:-mr-80 xl:mt-20 xl:-mr-96 2xl:ml-96 2xl:mt-20 z-10 text-5xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl 2xl:text-9xl text-gray-700 font-serif">
             Interior
           </p>
           <div className="z-20 mt-28 -mr-28 md:mt-32 md:-mr-44 lg:mt-36 lg:-mr-44 xl:mt-44 xl:-mr-48 ">
             <Image
               src={require("../assets/img1.jpeg")}
               alt="Image"
-              className="xl:w-full xl:h-60 lg:w-full lg:h-60 md:w-96 md:h-52 sm:w-60 sm:h-24 w-44 h-28 object-cover"
+              className="xl:w-96 xl:h-60 lg:w-96 lg:h-60 md:w-96 md:h-52 sm:w-60 sm:h-24 w-44 h-28 object-cover"
             />
           </div>
           <div className="flex bg-[#E1976E] w-2/6 justify-end p-4 md:p-10 lg:p-10 xl:p-10 2xl:p-10">
@@ -180,16 +183,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-16 bg-[#E1976E] p-20">
-          <p className="text-[250px] font-extrabold text-gray-600 opacity-10">
+        <div className="mt-16 bg-[#E1976E] px-20 py-10 items-start">
+          <p className="text-[250px] font-extrabold text-gray-600 opacity-10 align-top">
             Interior
           </p>
-          <div className="z-20 -mt-80 flex flex-row justify-between px-40 items-center">
-            <p className="font-bold text-3xl">Interior</p>
-            <p>Our services</p>
-            <p>Contact us</p>
+          <div className="z-20">
+            <div className="-mt-80 flex flex-row justify-between px-40 z-30 items-start">
+              <p className="font-bold text-3xl font-serif">Interior</p>
+              <p className="font-bold text-lg">Our services</p>
+              <p className="font-bold text-lg">Contact us</p>
+            </div>
+            <div className="border border-white rounded-md z-30" />
+            <div className="flex flex-row justify-between px-40 mt-6 items-center z-30">
+              <button className="font-bold text-sm px-3 py-2 items-center rounded-xl z-30 justify-center bg-white text-[#E1976E]">
+                Counsultation
+              </button>
+              <div className="flex flex-col gap-y-2 items-start z-30">
+                <button className="text-base">Counsultation</button>
+                <button className="text-base">Idea</button>
+                <button className="text-base">Interior</button>
+                <button className="text-base">Design and photography</button>
+                <button className="text-base">Furniture production</button>
+              </div>
+              <div className="flex flex-col gap-y-2 -mt-3 z-30 items-start justify-start align-top">
+                <button className="text-base">+91 47575 46455</button>
+                <button className="text-base">designplusstudio.in</button>
+                <div className="flex flex-row gap-x-6 items-end mt-6">
+                  <Icon icon={fafacebook} />
+                  <Icon icon={fainstagram} />
+                  <Icon icon={fayoutubeplay} />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="border border-white rounded-md" />
         </div>
       </div>
     </main>
